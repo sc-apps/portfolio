@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>About me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-item"><a href="#about">About me</a></div>
+
+            <div class="menu-item"><a href="#portfolio">Portfolio</a></div>
+
+            <div class="menu-item"><a href="#contacts">Contacts</a></div>
+
+
+            <div>
+                <img id="menu-icon" src="hamburger.png" alt="menu-icon" onclick="openMenu()">
+                <ul id="hamburger">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="main">
+        <h1 id="name">Jane Doe, <br>Front-end developer</h1>
+    </section>
+    
+
+    <section id="about">
+        <div class="image-about">
+            <img src="image.jpg" alt="Photo1">
+            <img src="person.jpeg" alt="My Photo">
+        </div>
+        <div class="text-about">
+            <h2>About me</h2>
+            <p>
+                Hi, I'm Jane Doe. I've been a junior front-end developer for 5 months now.<br>
+                For me, programming is not just a job, it's a hobby.<br>
+                I'm open to new knowledge, I like to study new technologies and apply them in practice.<br>
+                <b>Skills</b>: HTML, CSS, JS, React.
+            </p>
+        </div>
+    </section>
+    <section id="portfolio">
+        </div>
+        <h2>PORTFOLIO</h2>
+        <div class="image-portfolio">
+            <div class="image-container">
+                <img src="project1.png" alt="flashcards app">
+                <button class="open-window" onclick="openForm1()">Flashcards</button>
+            </div>
+            <div class="image-container">
+                <img src="project2.png" alt="Virtual Piano app">
+                <button class="open-window" onclick="openForm2()">Virtual Piano</button>
+            </div>
+    
+            <div class="window" id="myForm1">
+                <form action="" class="form-container">
+                    <h2>Flashcards</h2>
+                    <p id="popup-text">You can see the project at the following link: <a href="https://www.cram.com/">flashcards</a>.<br>
+                        <br>
+                        I did this project when I was studing the frontend on HyperSkill. I created a web page with flip-down flash cards, learned some HTML basics and learned that CSS can easily make a beautiful design.
+                    </p>
+                    <button type="button" class="btn-close" onclick="closeForm1()">Close</button>
+                </form>
+            </div>
+            <div class="window" id="myForm2">
+                <form action="" class="form-container">
+                    <h2>Virtual Piano</h2>
+                    <p id="popup-text">You can see the project at the following link: <a href="https://www.cram.com/">Virtual Piano</a>.<br>
+                        <br>
+                        I did this project when I was studing the frontend on HyperSkill. I created a web page with flip-down flash cards, learned some HTML basics and learned that CSS can easily make a beautiful design.
+                    </p>
+                    <button type="button" class="btn-close" onclick="closeForm2()">Close</button>
+                </form>
+            </div>
+            
+        </div>
+        
+    </section>
+    <section id="contacts">
+        <div>
+            <h2>Contacts</h2>
+            <p>You can contact me at jane.doe@mail.com <br>
+            or phone number - 500 889 00</p>
+            <div>
+                <a href="https://www.github.com">
+                    <img src="github.svg"
+                         alt="github-image">
+                </a>
+                <a href="https://facebook.com">
+                    <img src="facebook.svg"
+                         alt="facebook-image">
+                </a>
+                <a href="https//www.twitter.com">
+                    <img src="twitter.svg"
+                         alt="twitter-image">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img src="instagram 1.svg"
+                         alt="insta-image">
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Jane Doe <br> <span id="small-text">2022</span></p>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
